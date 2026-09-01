@@ -1,0 +1,14 @@
+names:
+- Bolt
+- Bottle
+- Washer
+nc: 3
+roboflow:
+  license: MIT
+  project: bolts-washers
+  url: https://universe.roboflow.com/screwdetector-zc07z/bolts-washers/dataset/3
+  version: 3
+  workspace: screwdetector-zc07z
+test: ./test/images
+train: ./train/images
+val: ./valid/images

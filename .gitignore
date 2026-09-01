@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# YOLO outputs
+runs/
+*/runs/
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+*.keras
+
+# Datasets
+*/dataset/
+*/datasets/
