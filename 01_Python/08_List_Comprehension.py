@@ -11,3 +11,4 @@ print(even_number)
 #write a list comprehension to create a list containing the squares of only even numbers.
 sq_evennum = [number**2 for number in even_number]
 print(sq_evennum)
++
