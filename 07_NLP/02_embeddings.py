@@ -16,15 +16,15 @@ text = "Robotics is my field"
 #Convert token ids to token ids
 inputs = tokenizer(text, return_tesnors ="pt")
 print("InputIDs")
-print(inputs["input_ids"])
-print(inputs["input_ids"].shape)
+print(inputs)
+#print(inputs["input_ids"].shape)
 
 
 # Pass tokens through BERT
 with torch.no_grad():
     outputs = model(**inputs)
+
 # Get embeddings
 embeddings = outputs.last_hidden_state
-
 print("\nEmbedding shape:")
 print(embeddings.shape)

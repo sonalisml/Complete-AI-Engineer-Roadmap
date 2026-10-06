@@ -26,13 +26,13 @@ class TransformerBlock(nn.Module):
         attention_output,_ = self.attention(x,x,x)
 
         #---residual+layernorm
-        x = self.norm1(x+attention_output)
+        x = self.norm1(x + attention_output)
         
         #---ffn
         ffn_output = self.ffn(x)
         
         #---residual+layernorm
-        x= self.norm2(x+ffn_output)
+        x= self.norm2(x + ffn_output)
 
         return x
 
